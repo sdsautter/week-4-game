@@ -8,7 +8,7 @@ height: 100%;
 
 .rupee-number, .wins-losses, .links, .total, #name, #gameInstructions {
 	border: 2px solid black;
-	background-color: #CA9B41;
+	background-color: #D4AE67;
 	color: #201713;
 	opacity: .95;
 	font-weight: bold;
