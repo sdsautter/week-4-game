@@ -1,11 +1,13 @@
 var gameNumber = 0;
 var userNumber = 0;
 var linkValues = [];
+var gameOver = false;
 
 var wins = 0;
 var losses = 0;
 
 function newGame () {
+	gameOver = false;
 	userNumber = 0;
 	linkValues = [];
 	gameNumber = Math.floor(Math.random() * (120 - 19) + 19);
@@ -26,44 +28,54 @@ function newGame () {
 }
 
 $("#nesLink").click(function() { 
+		if (gameOver === false) {
 		userNumber = userNumber + linkValues[0];
 		console.log(userNumber);
 		$("#userNumber").html(userNumber);
 		gameChecker();
+	}
 	});
 $("#snesLink").click(function() { 
+		if (gameOver === false) {
+
 		userNumber = userNumber + linkValues[1];
 		console.log(userNumber);
 		$("#userNumber").html(userNumber);
 		gameChecker();
-
+}
 	});
 $("#ootLink").click(function() { 
+		if (gameOver === false) {
+
 		userNumber = userNumber + linkValues[2];
 		console.log(userNumber);
 		$("#userNumber").html(userNumber);
 		gameChecker();
-
+}
 	});
 $("#botwLink").click(function() { 
+		if (gameOver === false) {
+
 		userNumber = userNumber + linkValues[3];
 		console.log(userNumber);
 		$("#userNumber").html(userNumber);
 		gameChecker();
-
+}
 	});
 
 
 function gameChecker() {
 		if (userNumber === gameNumber) {
+		gameOver = true;
 		wins++;
 		console.log(linkValues);
-		newGame();
+		setTimeout(newGame, 3000);
 		console.log(linkValues);
 	} else if (userNumber > gameNumber) {
+		gameOver = true;
 		losses++;
 		console.log(linkValues);
-		newGame();
+		setTimeout(newGame, 3000);
 		console.log(linkValues);
 	}
 }
