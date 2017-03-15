@@ -6,6 +6,12 @@ var gameOver = false;
 var wins = 0;
 var losses = 0;
 
+var nesRupee = new Audio("assets/sounds/LOZ_Get_Rupee.mp3");
+var snesRupee = new Audio("assets/sounds/LTTP_Rupee1.mp3");
+var ootRupee = new Audio("assets/sounds/OOT_Get_Rupee.mp3");
+var botwRupee = new Audio("assets/sounds/ZSS_Rupee.mp3");
+
+
 function newGame() {
     gameOver = false;
     userNumber = 0;
@@ -32,7 +38,7 @@ function newGame() {
 $("#nesLink").click(function() {
     if (gameOver === false) {
         userNumber = userNumber + linkValues[0];
-        console.log(userNumber);
+       nesRupee.play();
         $("#userNumber").html(userNumber);
         gameChecker();
     }
@@ -41,7 +47,7 @@ $("#snesLink").click(function() {
     if (gameOver === false) {
 
         userNumber = userNumber + linkValues[1];
-        console.log(userNumber);
+        snesRupee.play();
         $("#userNumber").html(userNumber);
         gameChecker();
     }
@@ -50,7 +56,7 @@ $("#ootLink").click(function() {
     if (gameOver === false) {
 
         userNumber = userNumber + linkValues[2];
-        console.log(userNumber);
+        ootRupee.play();
         $("#userNumber").html(userNumber);
         gameChecker();
     }
@@ -59,7 +65,7 @@ $("#botwLink").click(function() {
     if (gameOver === false) {
 
         userNumber = userNumber + linkValues[3];
-        console.log(userNumber);
+        botwRupee.play();
         $("#userNumber").html(userNumber);
         gameChecker();
     }
