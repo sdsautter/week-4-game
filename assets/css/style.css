@@ -5,12 +5,66 @@ height: 100%;
    text-align: center
 }
 
-.links img {
-	max-width: 75px;
-	height: 100px;
+
+.rupee-number, .wins-losses, .links, .total, #name, #gameInstructions {
+	border: 2px solid black;
+	background-color: #CA9B41;
+	color: #201713;
+	opacity: .95;
+	font-weight: bold;
+	margin: 2% 1%;
 }
 
-#gameNumber, .wins-losses, .links, .total, #name, #gameInstructions {
-	border: 2px solid black;
-	background-color: white;
+.rupee-number {
+	padding: 9%;
+	color: #1F6250;
+	font-size: 1.5em;
+}
+
+#gameInstructions {
+	padding: 2%;
+}
+
+.links {
+	opacity: 1;
+}
+
+.links img {
+	padding: 2%;
+	max-width: 80px;
+	height: 110px;
+	opacity: 1;
+}
+
+#wins {
+	padding: 5%;
+}
+
+#losses {
+	padding: 5%;
+}
+
+.greenRupee {
+	height: 50px;
+	padding: 1%;
+}
+
+hr {
+	margin: 1%;
+}
+
+#userNumber {
+	font-size: 1.5em;
+}
+
+#name {
+	color: #5F0405;
+}
+
+.winning-number {
+	color: #1F6250;
+}
+
+.losing-number {
+	color: #5F0405;
 }

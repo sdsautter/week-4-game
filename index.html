@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This makes the page auto refresh -->
     <!-- <meta http-equiv="refresh" content="5"> -->
-    <title>Link Collector</title>
+    <title>Rupee Collector</title>
     <link rel="icon" href="assets/images/8-bit-link.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -15,36 +15,37 @@
 <body>
     <div class="wrapper">
         <div class="container">
+        
             <div class="row">
                 <div class="col-xs-10 offset-xs-1 col-md-4 offset-md-4">
                     <div id="name">
-                        <h1>Link Collector</h1>
+                        <h1>Rupee Collector</h1>
                     </div>
                 </div>
             </div>
-            <br>
+            
             <div class="row">
-                <div class="col-xs-12 col-md-8 offset-md-2">
+                <div class="col-xs-12 col-md-10 offset-md-1">
                     <div id="gameInstructions">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio porro amet aspernatur impedit odio delectus officia natus, laudantium, doloremque itaque. Quisquam nisi magni repellendus ab assumenda error veniam, atque repudiandae. </p>
+                        <p> Each Link has a small fortune in their pockets. You can try to take their money, but they fight back so you can only take so much each time. See if you can steal the perfect amount from the Links to match the number of rupees in the middle.</p>
                     </div>
                 </div>
             </div>
-            <br>
+            
 
             <div class="row">
-                <div class="col-xs-6 col-md-4 offset-md-3">
-                    <div id="gameNumber"> </div>
+                <div class="col-xs-6 col-md-2 offset-md-4">
+                   <div class="rupee-number"> <img class="greenRupee" src="assets/images/GreenRupee.png"> <span id="gameNumber"> </span> </div>
                 </div>
                 <div class="col-xs-6 col-md-2">
                     <div class="wins-losses">
                     <div id="wins"> </div>
-                    <br>
+                    
                     <div id="losses"> </div>
                     </div>
                 </div>
             </div>
-            <br>
+            
 
             <div class="row">
                 <div class="col-xs-3 col-md-2 offset-md-2">
@@ -68,23 +69,26 @@
                     </div>
                 </div>
             </div>
-            <br>
+            
 
             <div class="row">
                 <div class="col-xs-10 offset-xs-1 col-md-4 offset-md-4">
                     <div class="total">
-                        <p>Your total score is:</p>
+                        <p>Your total rupees are:</p>
+                        <hr>
+                    <img class="greenRupee" src="assets/images/GreenRupee.png"> <span id="userNumber"> </span>
+
                     </div>
                 </div>
             </div>
-            <br>
-
+            
+<!-- 
             <div class="row">
                 <div class="col-xs-10 offset-xs-1 col-md-4 offset-md-4">
                     <div class="total" id="userNumber"> </div>
                 </div>
-            </div>
-            <br>
+            </div> -->
+            
         </div>
     </div>
 </body>
