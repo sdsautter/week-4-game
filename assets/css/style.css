@@ -21,7 +21,7 @@ height: 100%;
 .rupee-number {
 	padding: 9%;
 	color: #1F6250;
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 #gameInstructions {
@@ -57,7 +57,7 @@ hr {
 }
 
 #userNumber {
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 #name {
