@@ -11,7 +11,7 @@ var snesRupee = new Audio("assets/sounds/LTTP_Rupee1.mp3");
 var ootRupee = new Audio("assets/sounds/OOT_Get_Rupee.mp3");
 var botwRupee = new Audio("assets/sounds/ZSS_Rupee.mp3");
 var loseSound = new Audio("assets/sounds/LOZ_Link_Die.mp3");
-var winSound = new Audio("assets/sounds/LOZ_secret.mp3");
+var winSound = new Audio("assets/sounds/LOZ_Secret.mp3");
 
 
 
