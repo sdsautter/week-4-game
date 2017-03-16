@@ -82,7 +82,7 @@ function gameChecker() {
         winSound.play();
         $("#userNumber").attr("class", "winning-number");
         console.log(linkValues);
-        setTimeout(newGame, 3000);
+        setTimeout(newGame, 1500);
         console.log(linkValues);
     } else if (userNumber > gameNumber) {
         gameOver = true;
