@@ -10,6 +10,9 @@ var nesRupee = new Audio("assets/sounds/LOZ_Get_Rupee.mp3");
 var snesRupee = new Audio("assets/sounds/LTTP_Rupee1.mp3");
 var ootRupee = new Audio("assets/sounds/OOT_Get_Rupee.mp3");
 var botwRupee = new Audio("assets/sounds/ZSS_Rupee.mp3");
+var loseSound = new Audio("assets/sounds/LOZ_Link_Die.mp3");
+var winSound = new Audio("assets/sounds/LOZ_secret.mp3");
+
 
 
 function newGame() {
@@ -76,6 +79,7 @@ function gameChecker() {
     if (userNumber === gameNumber) {
         gameOver = true;
         wins++;
+        winSound.play();
         $("#userNumber").attr("class", "winning-number");
         console.log(linkValues);
         setTimeout(newGame, 3000);
@@ -83,6 +87,7 @@ function gameChecker() {
     } else if (userNumber > gameNumber) {
         gameOver = true;
         losses++;
+        loseSound.play();
         $("#userNumber").attr("class", "losing-number");
         console.log(linkValues);
         setTimeout(newGame, 3000);
